@@ -1,0 +1,22 @@
+{
+    "name": "famima65536/comment-in-world",
+    "description": "leave a comment in the world",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "famima65536",
+            "email": "famima65536@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "pocketmine/pocketmine-mp": "^4.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "famima65536\\CommentInWorld\\": "src/"
+        }
+    }
+}
