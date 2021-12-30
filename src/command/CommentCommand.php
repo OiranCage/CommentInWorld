@@ -31,7 +31,7 @@ class CommentCommand extends Command {
 		}
 
 		$location = $sender->getLocation();
-		$location->y += $sender->getEyeHeight();
+		$location->y += 1;
 		$entity = new CommentBubble($location, null, new Comment($text, $sender->getName(), new DateTimeImmutable()));
 		$entity->spawnToAll();
 	}
