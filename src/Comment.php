@@ -35,7 +35,7 @@ class Comment {
 	}
 
 	public function format(): string{
-		$formatted_text = join("\n", str_split($this->text, 10));
+		$formatted_text = join("\n", mb_str_split($this->text, 20));
 		return "{$formatted_text}\n{$this->poster}\n{$this->createdTime->format('Y-m-d H:i:s')}";
 	}
 

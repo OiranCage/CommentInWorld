@@ -23,5 +23,8 @@
             "type": "github",
             "url": "https://github.com/Rush2929/CustomEntityLoader/"
         }
-    ]
+    ],
+    "require": {
+        "ext-mbstring": "*"
+    }
 }

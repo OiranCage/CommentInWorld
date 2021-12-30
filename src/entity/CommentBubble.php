@@ -26,6 +26,7 @@ class CommentBubble extends Entity {
 		parent::__construct($location, $nbt);
 
 		$this->setImmobile();
+		$this->setScale(2);
 
 		if($comment !== null){
 			$this->comment = $comment;
