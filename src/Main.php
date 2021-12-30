@@ -29,18 +29,13 @@ class Main extends PluginBase {
 			return new CommentBubble(EntityDataHelper::parseLocation($nbt, $world), $nbt);
 		}, ['CommentBubble', 'comment_in_world:comment_bubble']);
 
-		ItemFactory::getInstance()->register(new class(new ItemIdentifier(ItemIds::SPAWN_EGG, EntityLegacyIds::ZOMBIE_VILLAGER), "Comment Bubble Spawn Egg") extends SpawnEgg{
-			public function createEntity(World $world, Vector3 $pos, float $yaw, float $pitch) : Entity{
-				return new CommentBubble(Location::fromObject($pos, $world, $yaw, $pitch));
-			}
-		});
-
 		$this->getServer()->getCommandMap()->register("comment_in_world", new CommentCommand("comment", "post a comment in world"));
 	}
 
 	public function onEnable(): void{
 		CustomEntityLoader::getEntityRegistry()->add(new EntityRegistryEntry(
-			"comment_in_world:comment_bubble"
+			"comment_in_world:comment_bubble",
+			"da3b4e01-26b3-49be-aec3-95c4f003a7ef"
 		));
 
 	}
