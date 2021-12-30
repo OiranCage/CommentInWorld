@@ -1,0 +1,10 @@
+name: CommentInWorld
+main: famima65536\CommentInWorld\Main
+src-namespace-prefix: famima65536\CommentInWorld
+version: 1.0.0
+api: 4.0.0
+depend:
+  - CustomEntityLoader
+permissions:
+  comment-in-world.command.comment:
+    default: true

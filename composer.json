@@ -9,14 +9,19 @@
             "email": "famima65536@gmail.com"
         }
     ],
-    "require": {
-    },
     "require-dev": {
-        "pocketmine/pocketmine-mp": "^4.0.3"
+        "pocketmine/pocketmine-mp": "^4.0.3",
+        "rush2929/customentityloader": "^1.0"
     },
     "autoload": {
         "psr-4": {
             "famima65536\\CommentInWorld\\": "src/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "github",
+            "url": "https://github.com/Rush2929/CustomEntityLoader/"
+        }
+    ]
 }
